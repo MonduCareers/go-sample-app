@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:14.2-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database/schema:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=mondu123
+      - POSTGRES_DB=mondu_dev
