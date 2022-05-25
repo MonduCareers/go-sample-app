@@ -56,7 +56,7 @@ Sample response:
 ### Deposit
 Request:
 ```bash
-curl -XPOST http://localhost:8080/account/create -d '{"id":"<Account ID>","amount":5}'
+curl -XPOST http://localhost:8080/account/deposit -d '{"id":"<Account ID>","amount":5}'
 ```
 
 Sample response:
